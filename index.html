@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+    
+</head>
+ 
+<body>
+
+  
+
+    <div class="elements">
+       
+       <div class="top">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand"  href="">Exchange.co</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link"  href="#feature">Feature</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#contact">Contact</a>
+                </li>
+            </ul>
+         </div>
+        </div>
+        </nav>
+     
+
+
+<div class="mid">
+ 
+<div class="text">
+    <h1>
+       
+        Here you can convert your currency to any Exchange rate
+    </h1>
+</div>
+
+<div class="clock">
+    <div class="date date-time">
+        <span id='date-'></span>
+    </div>
+    <div class="time date-time">
+        <span id='-time'></span>
+    </div>
+</div>
+
+
+
+</div>
+
+      
+   
+
+    
+    
+
+  
+
+        <div class="currency">
+            <input type="number" id="amount" value="1"  min="1">
+
+
+           
+            <select name="" id="first-cur">
+
+                <option>select currency</option>
+    <option id="curr" value="AFN" >Afghan Afghani</option>
+
+    <option id="curr" value="AUD">Australian Dollar</option>
+   
+    <option id="curr" value="BHD">Bahraini Dinar</option>
+    <option id="curr" value="BDT">Bangladeshi Taka</option>
+    
+    <option id="curr" value="BYR">Belarusian Ruble</option>
+    <option id="curr" value="BEF">Belgian Franc</option>
+
+    <option id="curr" value="BMD">Bermudan Dollar</option>
+    <option id="curr" value="BTN">Bhutanese Ngultrum</option>
+    <option id="curr" value="BTC">Bitcoin</option>
+
+    <option id="curr" value="BRL">Brazilian Real</option>
+    <option id="curr" value="GBP">British Pound Sterling</option> 
+    
+    <option id="curr" value="KHR">Cambodian Riel</option>
+    <option id="curr" value="CAD">Canadian Dollar</option>
+    
+    <option id="curr" value="CNY">Chinese Yuan</option>
+    <option id="curr" value="COP">Colombian Peso</option>
+
+    <option id="curr" value="DOP">Dominican Peso</option>
+    <option id="curr" value="XCD">East Caribbean Dollar</option>
+    <option id="curr" value="EGP">Egyptian Pound</option>
+
+    <option id="curr" value="EUR">Euro</option>
+ 
+    <option id="curr" value="GHS">Ghanaian Cedi</option>
+    
+    <option id="curr" value="GRD">Greek Drachma</option>
+
+    <option id="curr" value="HKD">Hong Kong Dollar</option>
+    <option id="curr" value="HUF">Hungarian Forint</option>
+    <option id="curr" value="ISK">Icelandic KrÃ³na</option>
+    <option id="curr" value="INR">Indian Rupee</option>
+    <option id="curr" value="IDR">Indonesian Rupiah</option>
+    <option id="curr" value="IRR">Iranian Rial</option>
+    <option id="curr" value="IQD">Iraqi Dinar</option>
+    <option id="curr" value="ILS">Israeli New Sheqel</option>
+    <option id="curr" value="ITL">Italian Lira</option>
+    <option id="curr" value="JMD">Jamaican Dollar</option>
+    <option id="curr" value="JPY">Japanese Yen</option>
+  
+    <option id="curr" value="KZT">Kazakhstani Tenge</option>
+    <option id="curr" value="KES">Kenyan Shilling</option>
+    <option id="curr" value="KWD">Kuwaiti Dinar</option>
+
+    <option id="curr" value="MYR">Malaysian Ringgit</option>
+    <option id="curr" value="MVR">Maldivian Rufiyaa</option>
+    <
+    <option id="curr" value="MUR">Mauritian Rupee</option>
+    <option id="curr" value="MXN">Mexican Peso</option>
+ 
+    <option id="curr" value="MMK">Myanmar Kyat</option>
+    <option id="curr" value="NAD">Namibian Dollar</option>
+    <option id="curr" value="NPR">Nepalese Rupee</option>
+
+    <option id="curr" value="NZD">New Zealand Dollar</option>
+
+    <option id="curr" value="NGN">Nigerian Naira</option>
+   
+    <option id="curr" value="OMR">Omani Rial</option>
+    <option id="curr" value="PKR">Pakistani Rupee</option>
+
+    <option id="curr" value="PHP">Philippine Peso</option>
+    <option id="curr" value="PLN">Polish Zloty</option>
+    <option id="curr" value="QAR">Qatari Rial</option>
+    <option id="curr" value="RON">Romanian Leu</option>
+    <option id="curr" value="RUB">Russian Ruble</option>
+
+    <option id="curr" value="SAR">Saudi Riyal</option>
+  
+    <option id="curr" value="SGD">Singapore Dollar</option>
+  
+    <option id="curr" value="ZAR">South African Rand</option>
+    <option id="curr" value="KRW">South Korean Won</option>
+ 
+    <option id="curr" value="LKR">Sri Lankan Rupee</option>
+ 
+   
+    <option id="curr" value="SEK">Swedish Krona</option>
+    <option id="curr" value="CHF">Swiss Franc</option>
+    <option id="curr" value="SYP">Syrian Pound</option>
+
+    <option id="curr" value="TJS">Tajikistani Somoni</option>
+    <option id="curr" value="TZS">Tanzanian Shilling</option>
+    <option id="curr" value="THB">Thai Baht</option>
+  
+   
+    <option id="curr" value="TRY">Turkish Lira</option>
+    <option id="curr" value="TMT">Turkmenistani Manat</option>
+  
+    <option id="curr" value="UAH">Ukrainian Hryvnia</option>
+    <option id="curr" value="AED">United Arab Emirates Dirham</option>
+    
+    <option id="curr" value="USD" selected >US Dollar</option>
+    <option id="curr" value="UZS">Uzbekistan Som</option>
+   
+    <option id="curr" value="VEF">Venezuelan BolÃ­var</option>
+    <option id="curr" value="VND">Vietnamese Dong</option>
+    <option id="curr" value="YER">Yemeni Rial</option>
+    
+            </select>
+            
+
+            <svg id="swap" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="full" class="bi bi-arrow-left-right" viewBox="0 0 17 17">
+                <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+              </svg>
+              
+
+              <label for="displayValue" ></label><input  id="output" type="textbox" name="display">
+
+            <select name="" id="second-cur">
+                <option>select currency</option>
+                <option id="curr2" value="AFN" >Afghan Afghani</option>
+
+                <option id="curr2" value="AUD">Australian Dollar</option>
+               
+                <option id="curr2" value="BHD">Bahraini Dinar</option>
+                <option id="curr2" value="BDT">Bangladeshi Taka</option>
+                
+                <option id="curr2" value="BYR">Belarusian Ruble</option>
+                <option id="curr2" value="BEF">Belgian Franc</option>
+            
+                <option id="curr2" value="BMD">Bermudan Dollar</option>
+                <option id="curr2" value="BTN">Bhutanese Ngultrum</option>
+                <option id="curr2" value="BTC">Bitcoin</option>
+            
+                <option id="curr2" value="BRL">Brazilian Real</option>
+                <option id="curr2" value="GBP">British Pound Sterling</option> 
+                
+                <option id="curr2" value="KHR">Cambodian Riel</option>
+                <option id="curr2" value="CAD">Canadian Dollar</option>
+                
+                <option id="curr2" value="CNY">Chinese Yuan</option>
+                <option id="curr2" value="COP">Colombian Peso</option>
+            
+                <option id="curr2" value="DOP">Dominican Peso</option>
+                <option id="curr2" value="XCD">East Caribbean Dollar</option>
+                <option id="curr2" value="EGP">Egyptian Pound</option>
+            
+                <option id="curr2" value="EUR">Euro</option>
+             
+                <option id="curr2" value="GHS">Ghanaian Cedi</option>
+                
+                <option id="curr2" value="GRD">Greek Drachma</option>
+            
+                <option id="curr2" value="HKD">Hong Kong Dollar</option>
+                <option id="curr2" value="HUF">Hungarian Forint</option>
+                <option id="curr2" value="ISK">Icelandic KrÃ³na</option>
+                <option id="curr2" value="INR" selected>Indian Rupee</option>
+                <option id="curr2" value="IDR">Indonesian Rupiah</option>
+                <option id="curr2" value="IRR">Iranian Rial</option>
+                <option id="curr2" value="IQD">Iraqi Dinar</option>
+                <option id="curr2" value="ILS">Israeli New Sheqel</option>
+                <option id="curr2" value="ITL">Italian Lira</option>
+                <option id="curr2" value="JMD">Jamaican Dollar</option>
+                <option id="curr2" value="JPY">Japanese Yen</option>
+              
+                <option id="curr2" value="KZT">Kazakhstani Tenge</option>
+                <option id="curr2" value="KES">Kenyan Shilling</option>
+                <option id="curr2" value="KWD">Kuwaiti Dinar</option>
+            
+                <option id="curr2" value="MYR">Malaysian Ringgit</option>
+                <option id="curr2" value="MVR">Maldivian Rufiyaa</option>
+                <
+                <option id="curr2" value="MUR">Mauritian Rupee</option>
+                <option id="curr2" value="MXN">Mexican Peso</option>
+             
+                <option id="curr2" value="MMK">Myanmar Kyat</option>
+                <option id="curr2" value="NAD">Namibian Dollar</option>
+                <option id="curr2" value="NPR">Nepalese Rupee</option>
+            
+                <option id="curr2" value="NZD">New Zealand Dollar</option>
+            
+                <option id="curr2" value="NGN">Nigerian Naira</option>
+               
+                <option id="curr2" value="OMR">Omani Rial</option>
+                <option id="curr2" value="PKR">Pakistani Rupee</option>
+            
+                <option id="curr2" value="PHP">Philippine Peso</option>
+                <option id="curr2" value="PLN">Polish Zloty</option>
+                <option id="curr2" value="QAR">Qatari Rial</option>
+                <option id="curr2" value="RON">Romanian Leu</option>
+                <option id="curr2" value="RUB">Russian Ruble</option>
+            
+                <option id="curr2" value="SAR">Saudi Riyal</option>
+              
+                <option id="curr2" value="SGD">Singapore Dollar</option>
+              
+                <option id="curr2" value="ZAR">South African Rand</option>
+                <option id="curr2" value="KRW">South Korean Won</option>
+             
+                <option id="curr2" value="LKR">Sri Lankan Rupee</option>
+             
+               
+                <option id="curr2" value="SEK">Swedish Krona</option>
+                <option id="curr2" value="CHF">Swiss Franc</option>
+                <option id="curr2" value="SYP">Syrian Pound</option>
+            
+                <option id="curr2" value="TJS">Tajikistani Somoni</option>
+                <option id="curr2" value="TZS">Tanzanian Shilling</option>
+                <option id="curr2" value="THB">Thai Baht</option>
+              
+               
+                <option id="curr2" value="TRY">Turkish Lira</option>
+                <option id="curr2" value="TMT">Turkmenistani Manat</option>
+              
+                <option id="curr2" value="UAH">Ukrainian Hryvnia</option>
+                <option id="curr2" value="AED">United Arab Emirates Dirham</option>
+                
+                <option id="curr2" value="USD"  >US Dollar</option>
+                <option id="curr2" value="UZS">Uzbekistan Som</option>
+               
+                <option id="curr2" value="VEF">Venezuelan BolÃ­var</option>
+                <option id="curr2" value="VND">Vietnamese Dong</option>
+                <option id="curr2" value="YER">Yemeni Rial</option>       </select>
+            
+                <div id="bottom">
+            
+               
+                    <div class="rateshow" id="rateshow1">
+                       
+                    </div>
+                </div>
+        </div>
+        <div class="rateshow-bottom" >
+            <div id="rateshow2">
+
+            </div>
+
+            <div id="rateshow3">
+
+            </div>
+            <div id="rateshow4">
+            </div>
+            
+               
+            
+        </div>
+        
+  
+   <div class="extra">
+    
+    <button type="button" class="btn ">Get Started </button>
+    
+   </div>
+</div>
+</div>
+
+
+<div class="next-page">
+       <h1 class="graph">Graph</h1>
+    <img src="https://www.compareremit.com/ckfinder34/userfiles/images/Blog%20images/Rupee%20Graph.jpg" class="img" alt="" srcset="">
+    <div class="copyright">
+    
+           <p>&COPY; Anurag Kashyap</p> 
+       </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+
+</html>
